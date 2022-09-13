@@ -1,22 +1,22 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import Layout from '@/components/Layout'
 
 const Home = () => {
   return (
-    <div className="min-h-screen flex">
+    <div>
       <Head>
         <title>PC管理システム</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
+      <Layout>
         <h1 className="m-8 text-6xl">
           PC管理システム
         </h1>
-
-        <p className="m-8 text-2xl">
-          ログイン
-        </p>
-      </main>
+        <Link href="/login">
+          <button>ログアウト</button>
+        </Link>
+      </Layout>
     </div>
   )
 }
