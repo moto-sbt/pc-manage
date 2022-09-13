@@ -1,1 +1,6 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# PC管理システム（フロント）
+
+## 起動
+```sh
+$ yarn dev
+```
