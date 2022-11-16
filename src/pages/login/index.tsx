@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import { Button } from "flowbite-react";
 import Layout from '@/components/Layout'
 
 const login = async () => {
@@ -33,7 +34,7 @@ const Login = (props) => {
       <input type="text" placeholder='ユーザID' />
       <input type="text" placeholder='パスワード' />
       <Link href="/">
-        <button onClick={login}>ログイン</button>
+        <Button onClick={login}>ログイン</Button>
       </Link>
     </Layout>
   )
