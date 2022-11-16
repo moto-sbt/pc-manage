@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import { Button } from "flowbite-react";
+import { Button, TextInput, Label, Checkbox } from "flowbite-react";
 import Layout from '@/components/Layout'
 
 const login = async () => {
@@ -31,11 +31,31 @@ const Login = (props) => {
         <title>ログイン | PC管理システム</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <input type="text" placeholder='ユーザID' />
-      <input type="text" placeholder='パスワード' />
-      <Link href="/">
-        <Button onClick={login}>ログイン</Button>
-      </Link>
+      <div className="flex flex-col gap-4">
+        <div>
+          <TextInput
+            id="userId"
+            type="text"
+            placeholder="ユーザID"
+          />
+        </div>
+        <div>
+          <TextInput
+            id="password"
+            type="password"
+            placeholder="パスワード"
+          />
+        </div>
+        <div className="flex items-center gap-2">
+          <Checkbox id="remember" />
+          <Label>
+            ログイン情報をブラウザに保存する
+          </Label>
+        </div>
+        <Link href="/">
+          <Button onClick={login}>ログイン</Button>
+        </Link>
+      </div>
     </Layout>
   )
 }

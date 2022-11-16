@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { Button } from "flowbite-react";
 import Layout from '@/components/Layout'
 
 const Home = () => {
@@ -14,7 +15,7 @@ const Home = () => {
           PC管理システム
         </h1>
         <Link href="/login">
-          <button>ログアウト</button>
+          <Button>ログアウト</Button>
         </Link>
       </Layout>
     </div>
