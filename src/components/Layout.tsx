@@ -26,7 +26,7 @@ const Layout = ({ children }: Props) => {
           <Navbar.Link href="/">
             Home
           </Navbar.Link>
-          <Navbar.Link href="/">
+          <Navbar.Link href="/pc">
             PC管理
           </Navbar.Link>
           <Navbar.Link href="/">
